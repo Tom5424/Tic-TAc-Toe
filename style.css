@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background-image: url("img/img.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.gameOver {
+    position: absolute;
+    height: 80%;
+    z-index: 1;
+    animation: zoomIn 225ms ease-in-out;
+}
+
+
+.restartButton {
+    position: absolute;
+    bottom: 5px;
+    background-color: #1C0B7F;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: unset;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.restartButton:hover {
+    opacity: 0.9;
+}
+
+
+/****************** Klasse um Elemente verschwinden zu lassen ******************/
+.d-none {
+    display: none;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="templates_CSS/responsiv.css">
+    <link rel="stylesheet" href="templates_CSS/tic_tac_toe.css">
+    <link rel="stylesheet" href="templates_CSS/keyframes.css">
+
+    <link rel="shortcut icon" href="icons/tic_tac_toe_icon.png">
+
+    <script src="script.js"></script>
+</head>
+
+
+
+
+<body>
+
+
+
+    <img class="gameOver d-none" id="gameOver" src="img/game-over.png">
+
+    <button id="button" class="restartButton d-none" onclick="restartGame()">Restart Game</button>
+
+
+    <!--Zeigt die Spieler über dem Feld an-->
+    <div class="players">
+        <div id="player-1" class="playerInactive">
+            Player 1 <img src="img/circle.png">
+        </div>
+        <div id="player-2">
+            Player 2 <img src="img/cross.png">
+        </div>
+    </div>
+
+
+    <!--Zeigt die Linien im Spielfeld an-->
+    <div id="line-1" class="horinzontalLine" style="top: 260px;"></div>
+    <div id="line-2" class="horinzontalLine" style="top: 417px;"></div>
+    <div id="line-3" class="horinzontalLine" style="top: 575px;"></div>
+
+
+    <div id="line-4" class="horinzontalLine makeVertical" style="top: 417px; left: 404px;"></div>
+    <div id="line-5" class="horinzontalLine makeVertical" style="top: 417px;"></div>
+    <div id="line-6" class="horinzontalLine makeVertical" style="top: 417px; right: 404px;"></div>
+
+
+    <div id="line-7" class="horinzontalLine" style="top: 417px; transform: rotate(45deg) scaleX(0.0);"></div>
+    <div id="line-8" class="horinzontalLine" style="top: 417px; transform: rotate(-45deg) scaleX(0.0);"></div>
+
+
+    <!--Zeigt die Symbole im Spielfeld an-->
+    <table>
+        <tr>
+            <td onclick="fillShape(0)"> <img id="circle-0" class="shapes d-none" src="img/circle.png"> <img id="cross-0"
+                    class="shapes d-none" src="img/cross.png"></td>
+            <td onclick="fillShape(1)"><img id="circle-1" class="shapes d-none" src="img/circle.png"> <img id="cross-1"
+                    class="shapes d-none" src="img/cross.png"></td>
+            <td onclick="fillShape(2)"><img id="circle-2" class="shapes d-none" src="img/circle.png"> <img id="cross-2"
+                    class="shapes d-none" src="img/cross.png"></td>
+        </tr>
+        <tr>
+            <td onclick="fillShape(3)"><img id="circle-3" class="shapes d-none" src="img/circle.png"> <img id="cross-3"
+                    class="shapes d-none" src="img/cross.png"></td>
+            <td onclick="fillShape(4)"><img id="circle-4" class="shapes d-none" src="img/circle.png"> <img id="cross-4"
+                    class="shapes d-none" src="img/cross.png"></td>
+            <td onclick="fillShape(5)"><img id="circle-5" class="shapes d-none" src="img/circle.png"> <img id="cross-5"
+                    class="shapes d-none" src="img/cross.png"></td>
+        </tr>
+        <tr>
+            <td onclick="fillShape(6)"><img id="circle-6" class="shapes d-none" src="img/circle.png"> <img id="cross-6"
+                    class="shapes d-none" src="img/cross.png"></td>
+            <td onclick="fillShape(7)"><img id="circle-7" class="shapes d-none" src="img/circle.png"> <img id="cross-7"
+                    class="shapes d-none" src="img/cross.png"></td>
+            <td onclick="fillShape(8)"><img id="circle-8" class="shapes d-none" src="img/circle.png"> <img id="cross-8"
+                    class="shapes d-none" src="img/cross.png"></td>
+        </tr>
+
+    </table>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
